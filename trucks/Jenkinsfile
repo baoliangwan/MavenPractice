@@ -4,6 +4,7 @@ node {
    }
    stage('build') {
       bat '''
+         cd trucks
          mvn clean package
       '''
    }
