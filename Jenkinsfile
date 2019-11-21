@@ -3,7 +3,7 @@ node {
       checkout scm
    }
    stage('build') {
-      bat '''
+      sh '''
          cd trucks
          mvn clean package
       '''
